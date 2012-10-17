@@ -24,7 +24,6 @@ if [ "$PLATFORM" != "SunOS" ]; then
     tar -zxf $ZK_FILE && \
     cd $ZK/src/c && \
     ./configure \
-	--without-syncapi \
 	--enable-static \
 	--disable-shared \
 	--with-pic \
