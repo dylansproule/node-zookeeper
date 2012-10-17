@@ -9,7 +9,6 @@
 #include <v8-debug.h>
 using namespace v8;
 using namespace node;
-#undef THREADED
 #include <zookeeper.h>
 #include "zk_log.h"
 #include "buffer_compat.h"
