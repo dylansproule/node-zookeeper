@@ -18,6 +18,7 @@
         }],['OS=="mac"',{
 	  'include_dirs': ['<(module_root_dir)/build/zk/include/zookeeper'],
           'libraries': [
+          	'<(module_root_dir)/build/zk/lib/libzookeeper_st.a',
           	'<(module_root_dir)/build/zk/lib/libzookeeper_mt.a'
           ],
           'xcode_settings': {
@@ -27,6 +28,7 @@
         }],['OS=="linux"',{
           'include_dirs': ['<(module_root_dir)/build/zk/include/zookeeper'],
           'libraries': [
+          	'<(module_root_dir)/build/zk/lib/libzookeeper_st.a',
           	'<(module_root_dir)/build/zk/lib/libzookeeper_mt.a'
           ],
         }]
